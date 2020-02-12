@@ -21,8 +21,8 @@ ActiveRecord::Schema.define(version: 20160126235547) do
   create_table "preferences", force: :cascade do |t|
     t.integer "artist_id"
     t.integer "song_id"
-    t.string  "allow_create_artists"
-    t.string  "allow_create_songs"
+    t.boolean "allow_create_artists"
+    t.boolean "allow_create_songs"
   end
 
   create_table "songs", force: :cascade do |t|
