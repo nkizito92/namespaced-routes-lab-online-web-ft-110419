@@ -17,7 +17,7 @@ class ArtistsController < ApplicationController
     if @artist.save
       redirect_to @artist
     else
-      render :new
+     redirect_to new_artist
     end
   end
 
@@ -33,7 +33,7 @@ class ArtistsController < ApplicationController
     if @artist.save
       redirect_to @artist
     else
-      render :edit
+      redirect_to edit_artist
     end
   end
 
