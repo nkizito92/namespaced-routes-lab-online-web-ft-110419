@@ -18,6 +18,13 @@ ActiveRecord::Schema.define(version: 20160126235547) do
     t.datetime "updated_at", null: false
   end
 
+  create_table "preferences", force: :cascade do |t|
+    t.integer "artist_id"
+    t.integer "song_id"
+    t.string  "allow_create_artists"
+    t.string  "allow_create_songs"
+  end
+
   create_table "songs", force: :cascade do |t|
     t.string   "title"
     t.datetime "created_at", null: false

@@ -1,3 +1,4 @@
 class Preference < ActiveRecord::Base 
-    has_many :songs
+    belongs_to :song
+    belongs_to :artist
 end
